@@ -1,31 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Garuda Express Services</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function changeLanguage(lang) {
+      alert("Multi-language version coming soon.");
+    }
+  </script>
 </head>
-<body>
-  <header>
-    <h1>Garuda Express Services</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-gray-900 text-white p-4 flex justify-between items-center">
+    <div class="flex items-center space-x-2">
+      <img src="image-removebg.png" alt="Garuda Express Logo" class="h-10">
+      <div>
+        <h1 class="text-xl font-bold">Garuda Express Services</h1>
+        <p class="text-sm">Your logistics partner</p>
+      </div>
+    </div>
+    <div>
+      <select onchange="changeLanguage(this.value)" class="text-black p-1 rounded">
+        <option value="en">English</option>
+        <option value="hi">हिंदी</option>
+      </select>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>Fast, Reliable Driver Supply Across India</h2>
-      <p>We connect verified truck drivers with logistics companies 24x7.</p>
-    </section>
-  </main>
+  <!-- Hero Section -->
+  <section class="bg-yellow-100 text-center py-16 px-4">
+    <h2 class="text-3xl font-bold mb-4">Reliable & Fast Logistics Solutions</h2>
+    <p class="text-lg">Pan-India transport with professional drivers, secure handling, and GPS tracking.</p>
+  </section>
 
-  <footer>
-    <p>© 2025 Garuda Express Services</p>
+  <!-- Services -->
+  <section class="py-12 px-4 max-w-4xl mx-auto">
+    <h3 class="text-2xl font-semibold mb-6 text-center">Our Services</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <h4 class="font-bold text-lg">Full Truck Load (FTL)</h4>
+        <p>Dedicated truck service for bulk movement with safety assurance.</p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <h4 class="font-bold text-lg">GPS Enabled Tracking</h4>
+        <p>Real-time updates for live vehicle monitoring and route tracking.</p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <h4 class="font-bold text-lg">Driver Assistance</h4>
+        <p>We assist drivers 24/7 to ensure smooth operations and support.</p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <h4 class="font-bold text-lg">PAN India Network</h4>
+        <p>We cover major cities and towns across India with reliable reach.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="bg-gray-50 py-12 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h3 class="text-2xl font-semibold mb-4">About Garuda Express</h3>
+      <p>Garuda Express Services connects businesses with reliable transportation solutions. Our team bridges drivers and clients with safety, transparency, and 24/7 support. We aim to be your trusted logistics partner nationwide.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-12 px-4 bg-yellow-50">
+    <div class="max-w-3xl mx-auto text-center">
+      <h3 class="text-2xl font-semibold mb-4">Contact Us</h3>
+      <p>Email: <a href="mailto:garudaexpressservices@gmail.com" class="text-blue-600">garudaexpressservices@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919313994893" class="text-blue-600">+91 9313994893</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center p-4">
+    <p>&copy; 2025 Garuda Express Services. All rights reserved.</p>
   </footer>
 </body>
 </html>
